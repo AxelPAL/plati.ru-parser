@@ -1,0 +1,17 @@
+{
+    "name": "axelpal/plati.ru-parser",
+    "description": "plati.ru parser with sorting of items price",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AxelPAL",
+            "email": "axelpal@gmail.com"
+        }
+    ],
+    "require": {
+        "bower-asset/bootstrap": "^3.3",
+        "bower-asset/jquery": "1.*",
+        "bower-asset/pace": "^1.0",
+        "bower-asset/jquery.tablesorter": "^2.21"
+    }
+}

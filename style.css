@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    width: 50%;
+    margin: 40px auto;
+}
+.button_wrapper{
+    margin: 10px auto;
+    width: 81px;
+}
+#wrapp{
+    margin: 40px auto;
+    width: 263px;
+}
+#table th{
+    cursor: pointer;
+}
+.votes{
+    color: green;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+    @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+        .button_wrapper{
+            margin: 40px auto;
+            width: 100%;
+			text-align: center;			
+        }
+        #wrapp{            
+            width: 100%;
+        }
+        #wrapper{            
+            width: 100%;
+        }
+		#table{
+			  font-size: 22px;
+		}
+        #text{
+            height: 50px;
+			font-size: 49px;
+			margin-bottom: 20px;
+			height: 70px;
+        }
+        label {
+            font-size: 18px;
+			padding-top: 10px;
+        }
+		.row input{
+			/* Double-sized Checkboxes */
+		  -ms-transform: scale(3); /* IE */
+		  -moz-transform: scale(3); /* FF */
+		  -webkit-transform: scale(3); /* Safari and Chrome */
+		  -o-transform: scale(3); /* Opera */
+		  transform: scale(3);
+		  padding: 10px;
+		    margin: 20px 15px;
+		}
+		#update{
+			width: 50%;
+			font-size: 28px;
+		}
+
+    }
+    
+	
+#text{
+	width: 100%;
+	text-align: center;
+}	
+input[type=checkbox]{
+	float: left;
+}
+.row{
+	margin-left: 0; 
+	margin-right: 0;
+}
