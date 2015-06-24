@@ -25,7 +25,7 @@
 </head>
 <body>
 <div id="wrapp">
-    <input type="text" id="text" value="<?=trim($_GET['q'])?>" />
+    <input type="text" id="text" value="<?=trim($_GET['q'])?>" autofocus="autofocus"/>
 	<div class="row">
 		<input type="checkbox" <?=($_GET['sort'] === "0") ? "" : 'checked="checked"'?> id="lower_first" />
 		<label for="lower_first">Сортировка по цене</label>
