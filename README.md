@@ -1,6 +1,8 @@
 # plati.ru-parser
 удобный парсер для сайта plati.ru с сортировкой по цене
 
+[DEMO](http://plati.axelpal.ru)
+
 Требования:
 В системе должен стоять [composer](https://getcomposer.org/download/) и [composer-asset-plugin](https://github.com/francoispluchino/composer-asset-plugin)
 
