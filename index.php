@@ -37,7 +37,7 @@
 				</label>
 			</div>
 			<div class="button_wrapper">
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id='update'>Спарсить</button>
+				<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" id='update'>Найти</a>
 			</div>
 		</div>
 		<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo"></div>
