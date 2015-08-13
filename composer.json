@@ -9,7 +9,6 @@
         }
     ],
     "require": {
-        "bower-asset/bootstrap": "^3.3",
         "bower-asset/jquery": "1.*",
         "bower-asset/pace": "^1.0",
         "bower-asset/jquery.tablesorter": "^2.21",
