@@ -30,7 +30,7 @@ function send(){
         params += "&parsePages=1";
     }
     history.pushState({}, 'Парсер Plati.ru', '/?q=' + text + params);
-    console.log('/update.php?q=' + text + params);
+    $("#p2").show();
     $.ajax({
         url: 'update.php',
         data: {q: text, sort: sort, parsePages: parsePages},
@@ -38,6 +38,7 @@ function send(){
             $('#wrapper').html(response);
             $("#table").tablesorter();
 			goToByScroll("wrapper");
+            $("#p2").hide();
         }
     });	
 }

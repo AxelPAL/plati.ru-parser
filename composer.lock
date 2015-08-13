@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ecf1732897aee0c46858b59b0867f43a",
+    "hash": "2a7411080a8a3d2bf3fe34aa408c6379",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f"
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
                 "shasum": ""
             },
             "require": {
@@ -27,13 +27,7 @@
             "extra": {
                 "bower-asset-main": [
                     "less/bootstrap.less",
-                    "dist/css/bootstrap.css",
-                    "dist/js/bootstrap.js",
-                    "dist/fonts/glyphicons-halflings-regular.eot",
-                    "dist/fonts/glyphicons-halflings-regular.svg",
-                    "dist/fonts/glyphicons-halflings-regular.ttf",
-                    "dist/fonts/glyphicons-halflings-regular.woff",
-                    "dist/fonts/glyphicons-halflings-regular.woff2"
+                    "dist/js/bootstrap.js"
                 ],
                 "bower-asset-ignore": [
                     "/.*",
@@ -46,6 +40,9 @@
                     "test-infra"
                 ]
             },
+            "license": [
+                "MIT"
+            ],
             "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
             "keywords": [
                 "css",
@@ -104,16 +101,16 @@
         },
         {
             "name": "bower-asset/jquery.tablesorter",
-            "version": "v2.21.5",
+            "version": "v2.22.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mottie/tablesorter.git",
-                "reference": "d6794b1241e28b0a0375dd5a4e2dc75434572a28"
+                "reference": "3cd026ee051b2653f260ffd076a100a0d7544331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mottie/tablesorter/zipball/d6794b1241e28b0a0375dd5a4e2dc75434572a28",
-                "reference": "d6794b1241e28b0a0375dd5a4e2dc75434572a28",
+                "url": "https://api.github.com/repos/Mottie/tablesorter/zipball/3cd026ee051b2653f260ffd076a100a0d7544331",
+                "reference": "3cd026ee051b2653f260ffd076a100a0d7544331",
                 "shasum": ""
             },
             "require": {
@@ -125,6 +122,47 @@
                     "dist/js/jquery.tablesorter.combined.js"
                 ]
             }
+        },
+        {
+            "name": "bower-asset/material-design-lite",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/google/material-design-lite.git",
+                "reference": "dfb9a40bffcc41c9c45eebf25b37b2adc5e7876c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/google/material-design-lite/zipball/dfb9a40bffcc41c9c45eebf25b37b2adc5e7876c",
+                "reference": "dfb9a40bffcc41c9c45eebf25b37b2adc5e7876c",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "material.min.css",
+                    "material.min.js"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "./lib/.bower_components",
+                    "test",
+                    "tests"
+                ]
+            },
+            "license": [
+                "Apache-2"
+            ],
+            "description": "Material Design Components in CSS, JS and HTML",
+            "keywords": [
+                "design",
+                "guide",
+                "material",
+                "style",
+                "styleguide"
+            ]
         },
         {
             "name": "bower-asset/pace",

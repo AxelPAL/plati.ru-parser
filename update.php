@@ -17,7 +17,7 @@ if ( $totalPages ) {
 	if (is_array($rows) && $_GET['sort'] == 1 ) {
 		uasort( $rows, 'cmp' );
 	}
-	echo "<table id='table' class='table table-striped'><thead>
+	echo "<table id='table' class='mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp'><thead>
     <tr>
         <th>Название</th>
         <th>Цена, руб.</th>
@@ -30,7 +30,9 @@ if ( $totalPages ) {
         $url   = "http://plati.ru/asp/pay.asp?id_d=$id&ai=60697";
 		if($price > 0):?>
 		<tr>
-			<td><a href="<?= $url ?>"><?= $name ?></a></td>
+			<td>
+				<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="<?= $url ?>"><?= $name ?></a>
+			</td>
 			<td><?= $price ?></td>
 		</tr>
 			<?endif?>
