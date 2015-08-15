@@ -23,7 +23,9 @@ $(document).ready(function(){
                 var words = JSON.parse(msg);
                 var listElement = $(".predict-menu");
                 listElement.find("li").remove();
-                $container.removeClass('is-visible');
+                if($container.hasClass('is-visible')){
+                    $("#demo-menu-lower-left").click();
+                }
                 for(var i in words){
                     if(words.hasOwnProperty(i)){
                         var word = words[i];
@@ -31,7 +33,7 @@ $(document).ready(function(){
                         listElement.append($liElement[0]);
                     }
                 }
-                if(!$container.hasClass('is-visible') && words.length > 0){
+                if(!$(".mdl-menu__container").hasClass('is-visible') && words.length > 0){
                     $("#demo-menu-lower-left").click();
                 }
                 $(".liElement").off().on('click', function () {
@@ -69,7 +71,9 @@ function send(){
             $("#p2").hide();
         }
     });
-    $(".mdl-menu__container").removeClass('is-visible');
+    if($(".mdl-menu__container").hasClass('is-visible')){
+        $("#demo-menu-lower-left").click();
+    }
 }
 function goToByScroll(id){
       // Scroll
