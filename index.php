@@ -13,7 +13,8 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <title>Парсер Plati.ru</title>
     <link href="vendor/bower-asset/material-design-lite/material.min.css" type="text/css" rel="stylesheet" />
-    <link href="vendor/bower-asset/pace/themes/blue/pace-theme-corner-indicator.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="vendor/bower-asset/pace/themes/blue/pace-theme-corner-indicator.css" type="text/css" rel="stylesheet" />
     <link href="styles/style.css" type="text/css" rel="stylesheet" />
     <script src="vendor/bower-asset/jquery/dist/jquery.min.js"></script>
     <script src="vendor/bower-asset/material-design-lite/material.min.js"></script>
@@ -30,6 +31,12 @@
 				<input class="mdl-textfield__input" type="text" id="text" value="<?=trim($_GET['q'])?>" autofocus="autofocus"/>
 				<label class="mdl-textfield__label" for="text">Поиск...</label>
 			</div>
+			<button id="demo-menu-lower-left"
+					class="mdl-button mdl-js-button mdl-button--icon">
+				<i class="material-icons">more_vert</i>
+			</button>
+
+			<ul class="predict-menu mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left"></ul>
 			<div class="mdl-textfield mdl-js-textfield">
 				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="lower_first">
 					<input type="checkbox" <?=($_GET['sort'] === "0") ? "" : 'checked="checked"'?> id="lower_first"  class="mdl-switch__input" />

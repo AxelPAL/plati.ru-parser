@@ -88,3 +88,10 @@ input[type=checkbox]{
 .no-results{
     text-align: center;
 }
+#demo-menu-lower-left{
+    float: right;
+    margin-top: -49px;
+}
+.predict-menu li{
+    cursor: pointer;
+}

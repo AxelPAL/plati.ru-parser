@@ -2,17 +2,45 @@
  * Created by Family on 15.02.14.
  */
 $(document).ready(function(){
-    $('#update').on('click',function(){
-        send();
-    });
+    var $text = $("#text");
+    var $updateButton = $("#update");
+    var $container = $(".mdl-menu__container");
+    $updateButton.on('click', send);
     $( "body,#update,#text" ).keypress(function( event ) {
         if ( event.which == 13 ) {
             send();			
         }
     });
-    if($("#text").val()){
+    if($text.val()){
         send();
     }
+    $text.on('change keyup', function () {
+        var query = $(this).val();
+        $.ajax({
+            url: '/predict.php',
+            data: {q: query},
+            success: function (msg) {
+                var words = JSON.parse(msg);
+                var listElement = $(".predict-menu");
+                listElement.find("li").remove();
+                $container.removeClass('is-visible');
+                for(var i in words){
+                    if(words.hasOwnProperty(i)){
+                        var word = words[i];
+                        var $liElement = $("<li>").addClass('mdl-menu__item liElement').text(word);
+                        listElement.append($liElement[0]);
+                    }
+                }
+                if(!$container.hasClass('is-visible') && words.length > 0){
+                    $("#demo-menu-lower-left").click();
+                }
+                $(".liElement").off().on('click', function () {
+                    $text.val($(this).text());
+                    $updateButton.click();
+                });
+            }
+        });
+    });
 
     $('.table').tablesorter();
 });
@@ -40,7 +68,8 @@ function send(){
 			goToByScroll("wrapper");
             $("#p2").hide();
         }
-    });	
+    });
+    $(".mdl-menu__container").removeClass('is-visible');
 }
 function goToByScroll(id){
       // Scroll
