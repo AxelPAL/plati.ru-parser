@@ -16,6 +16,8 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="vendor/bower-asset/pace/themes/blue/pace-theme-corner-indicator.css" type="text/css" rel="stylesheet" />
     <link href="styles/style.css" type="text/css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="http://plati.ru/favicon.png">
+	<link rel="search" type="application/opensearchdescription+xml"href="/search.xml" title="Поиск товаров на Плати.ру" />
     <script src="vendor/bower-asset/jquery/dist/jquery.min.js"></script>
     <script src="vendor/bower-asset/material-design-lite/material.min.js"></script>
     <script src="vendor/bower-asset/jquery.tablesorter/dist/js/jquery.tablesorter.min.js"></script>

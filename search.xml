@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Поиск товаров на Плати.ру</ShortName>
+    <Description>Поиск товаров на Плати.ру</Description>
+    <Tags>plati.axelpal.ru - Поиск товаров на Плати.ру</Tags>
+    <Contact>axelpal@gmail.com</Contact>
+    <Image width="32" height="32" type="image/x-icon">http://plati.ru/favicon.png</Image>
+    <Url type="text/html" method="get" template="http://plati.axelpal.ru/?q={searchTerms}"/>
+</OpenSearchDescription>
